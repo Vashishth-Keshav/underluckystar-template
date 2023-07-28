@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="47px" viewBox="0 0 50 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M131.088088,4177.84616 C127.877213,4175.03171 123.101914,4175.53795 120.154705,4178.66579 L119.00043,4179.88921 L117.846156,4178.66579 C114.904806,4175.53795 110.123648,4175.03171 106.912772,4177.84616 C103.233156,4181.07646 103.0398,4186.87412 106.332705,4190.37562 L117.670378,4202.41692 C118.402786,4203.19436 119.592216,4203.19436 120.324624,4202.41692 L131.662296,4190.37562 C134.961061,4186.87412 134.767705,4181.07646 131.088088,4177.84616 Z" id="path-1"></path>
+        <filter x="-53.3%" y="-51.9%" width="206.7%" height="218.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-94.000000, -4168.000000)" fill-rule="nonzero">
+            <g id="Path">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FF0000" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

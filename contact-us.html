@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="starstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header-contact-pg">
+        <div class="logo">
+            <a>
+                <img src="Images/logo/star-2-removebg-preview.png">
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <a>Submit a request</a>
+            <a>Sign in</a>
+        </div>
+    </header>
+    <div class="header-line"></div>
+    <div class="container-contact-pg">
+        <div class="nav">
+            <div class="ol">
+                <div class="li">
+                    <a href="https://support.underluckystars.com/hc/en-us">Under Lucky Stars </a>
+                </div>
+                <div class="li">
+                    Submit a request
+                </div>
+            </div>
+            <div class="search-container">
+                <form class="Search">
+                <img src="Images/logo/search-icon.png">
+                <input type="search" placeholder="Search">
+                </form>
+            </div>
+        </div>
+        <h1>Submit a request</h1>
+
+        <form class=" form-main">
+        <label>Your email address</label>
+        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+        <label>Subject</label>
+        <input type="text">
+        <label>Description</label>
+        <div class="toolbar">
+            <button onclick="applyStyle('bold')"><i class="fas fa-bold"></i></button>
+            <button onclick="applyStyle('italic')"><i class="fas fa-italic"></i></button>
+            <button onclick="applyStyle('underline')"><i class="fas fa-underline"></i></button>
+            <button onclick="applyStyle('insertUnorderedList')"><i class="fas fa-list-ul"></i></button>
+            <button onclick="applyStyle('insertOrderedList')"><i class="fas fa-list-ol"></i></button>
+            <button onclick="applyCodeBlock()"><i class="fas fa-code"></i></button>
+            <button onclick="insertLink()"><i class="fas fa-link"></i></button>
+            <button onclick="applyQuote()"><i class="fas fa-quote-left"></i></button>
+        </div>
+        <textarea class="description-box"></textarea>
+        <p>Please enter the details of your request. A member of our support staff will respond as soon as possible.</p>
+        
+        <label>Attachments
+          <span class="optional">(optional)</span>
+          </label>
+          <div class="file-upload">
+          <input type="file">
+         Add file <span>or drop files here</span>
+          </div>
+          <input type="submit">
+        </form>
+    </div>
+    <footer class="footer-contact-pg">
+      <div class="footer-content">
+        <a href="https://support.underluckystars.com/hc/en-us">Under Lucky Stars </a>
+      </div>
+   
+    </footer>
+    <div class="powered-by-zendesk">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" focusable="false" viewBox="0 0 26 26">
+        <path d="M12 8.2v14.5H0zM12 3c0 3.3-2.7 6-6 6S0 6.3 0 3h12zm2 19.7c0-3.3 2.7-6 6-6s6 2.7 6 6H14zm0-5.2V3h12z"></path>
+      </svg>
+    
+      <a href="https://www.zendesk.com/service/help-center/?utm_source=helpcenter&amp;utm_medium=poweredbyzendesk&amp;utm_campaign=text&amp;utm_content=Under+Lucky+Stars" target="_blank" rel="nofollow">Powered by Zendesk</a>
+    </div>
+    <script>
+//   function applyStyle(style) {
+//   document.execCommand(style, false, null);
+// }
+
+// function applyCodeBlock() {
+//   var code = window.getSelection().toString();
+//   document.execCommand('insertText', false, '\n```' + code + '\n```\n');
+// }
+
+// function insertLink() {
+//   var url = prompt('Enter the URL:');
+//   if (url) {
+//     document.execCommand('createLink', false, url);
+//   }
+// }
+
+// function applyQuote() {
+//   var quote = window.getSelection().toString();
+//   document.execCommand('insertText', false, '\n> ' + quote + '\n');
+// }
+
+// function applyParagraphStyle(style) {
+//   document.execCommand(style, false, null);
+// }
+
+// function applyIndent(action) {
+//   document.execCommand(action, false, null);
+// }
+
+    </script>  
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="176px" height="176px" viewBox="0 0 176 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="73" cy="73" r="73"></circle>
+        <filter x="-16.1%" y="-14.7%" width="132.2%" height="132.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-37.000000, -1980.000000)">
+            <g id="Group-5" transform="translate(52.000000, 1993.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Group-4" transform="translate(30.000000, 31.000000)" fill="#000000">
+                    <rect id="Rectangle" x="20.8" y="36" width="64.8" height="13.6"></rect>
+                    <g id="Group-3" transform="translate(43.151472, 42.517157) rotate(-45.000000) translate(-43.151472, -42.517157) translate(13.151472, 12.517157)">
+                        <rect id="Rectangle" x="0.8" y="0.8" width="59.2" height="13.6"></rect>
+                        <rect id="Rectangle" transform="translate(7.206898, 30.234315) rotate(90.000000) translate(-7.206898, -30.234315) " x="-22.3931024" y="23.4343146" width="59.2" height="13.6"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

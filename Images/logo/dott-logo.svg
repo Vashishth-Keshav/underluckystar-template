@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="62px" viewBox="0 0 62 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(8.000000, 7.000000)" fill="#000000">
+            <polyline id="Star" points="3 44.2727922 -1.41553436e-14 46 1.72720779 43 -1.49880108e-14 40 3 41.7272078 6 40 4.27279221 43 6 46"></polyline>
+            <polyline id="Star" points="22 38.2727922 19 40 20.7272078 37 19 34 22 35.7272078 25 34 23.2727922 37 25 40"></polyline>
+            <polyline id="Star" points="24 23.2727922 21 25 22.7272078 22 21 19 24 20.7272078 27 19 25.2727922 22 27 25"></polyline>
+            <polyline id="Star" points="43 21.2727922 40 23 41.7272078 20 40 17 43 18.7272078 46 17 44.2727922 20 46 23"></polyline>
+            <polyline id="Star" points="36 4.27279221 33 6 34.7272078 3 33 1.83186799e-15 36 1.72720779 39 8.32667268e-16 37.2727922 3 39 6"></polyline>
+        </g>
+    </g>
+</svg>

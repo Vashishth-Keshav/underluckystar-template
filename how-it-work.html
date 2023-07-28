@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Maps</title>
+    <link rel="stylesheet" href="starstyle.css">
+</head>
+<body>
+    <div class="main">
+                  <!-- header start for desktop-->
+                  <div class="container">
+                    <div class="header    desktop-header">
+                        <a href="stars.html"><img class="img1" src="Images/logo/starss.png"></a>
+                         <div id="menu">
+                        
+                                <a href="how-it-work.html">How it works</a>
+                                <a href="Reviews.html">Reviews</a>
+                                <a href="Astronomically.html">Astronomically verified</a>
+                                <a href="FAQ.html">FAQ</a>
+                                <a href="contact-us.html">Contact Us</a>
+                       
+                        </div>
+                                 <a class="cart" href="cart.html"></a> 
+                    </div>
+                </div>
+                         <!-- header end for desktop -->
+        
+        
+        
+                         <!-- header start for mobile -->
+        
+                <div class="mob-header"  >
+                    <div class="menu-logo">
+                        <a href="stars.html"><img src="Images/logo/dott-logo.svg"> </a>
+                    </div>
+                    <h2 class="brand-name">Under Lucky Stars</h2>
+                    <a onclick="toggleMenu()" class="hamburger-icon">
+                        <img   src="Images/mix/hamburger-menu.svg">
+                      </a>
+                    <a onclick="toggleMenu()"  class="hamburger-icon-close">
+                        <img src="Images/mix/hamburger-menu-close.svg">
+                      </a>
+                      
+                      <div id="popup-Menu" class="popup">
+                        <a href="how-it-work.html">How it works</a>
+                        <a href="reviews">Reviews</a>
+                        <a href="Astronomically.html">Astronomically verified</a>
+                        <a href="FAQ.html">FAQ</a>
+                        <a href="contact-us.html">Contact Us</a>
+                        <hr>
+                        <a>
+                         <img class="flag" src="Images/country-flags/france.svg">
+                      <span>En Français</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/germany.svg">
+                      <span>Auf Deutsch</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/maldives.svg">
+                      <span>Magyarul</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/italy.svg">
+                      <span>In Italiano</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/japan.svg">
+                      <span>日本語</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/portugal.svg">
+                      <span>Em Português</span>
+                    </a>
+                    <a>
+                      <img class="flag" src="Images/country-flags/spain.svg">
+                      <span>En Español</span>
+                    </a>
+                    </div>
+                    
+                </div>
+                </div>
+        
+                        <!-- popout menu finish  -->
+                
+         <!-- header end for mobile -->
+
+            <section class="common-section">
+                <h1>How it works</h1> 
+                <h2>30 seconds video</h2>
+                <p>Watch this 30 seconds video to learn how Under Lucky Stars works.</p>
+                <div class="video-container"> 
+                    <iframe width='100%' max-width="742px" height="550px" src="https://www.youtube.com/embed/JGGyQYnHTXw" title="What&#39;s Under Lucky Stars? In 30 seconds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+             </div>
+             <p>When you are ready,
+                <a>design your star map here.</a>
+             </p>
+             <h2>Star charting</h2>
+             <p>Humanity has always been fascinated by the shiny dots in the sky. Over millennia, we have found repeating patterns in the movement of the stars and planets. Babylonians created predictive charts (so-called ephemeris) of the movement of celestial objects as early as 350 BC. Technology has come a long way since, and today we are able to replay and predict the movement of the stars from any location and time, with high precision.</p>
+             <p>At Under Lucky Stars, we are making our star maps with the greatest possible attention to scientific accuracy. We use the <a href="http://tdc-www.harvard.edu/catalogs/bsc5.html" target="_blank">Bright Star Catalog</a> from Yale University as our main source of celestial data, among several other astronomical databases. It contains galactic coordinates of all the stars visible from Earth with naked eye. These coordinates place each star in a galactic coordinate system. When creating a map, we process six high precision data points of over 9,000 stars.</p>
+             <p>For the position of a star in the sky at a particular place and date on Earth, we calculate the <a href="https://en.wikipedia.org/wiki/Azimuth" target="_blank">azimuth</a> and elevation of the star, based on the geolocation and time coordinates from that special moment chosen by you. The complex astronomical calculus involved in <a href="https://en.wikipedia.org/wiki/Celestial_mechanics" target="_blank">celestial mechanics</a> ensures high fidelity and uniqueness of each map.</p>
+             <p>Our star maps are verified by a third party for accuracy. This helps you ensure that they are genuine and avoid fake knock-offs. You can read more about it <a>here</a>.</p>
+             <p>Once we have the position of each star in the sky, we draw a <a href="https://en.wikipedia.org/wiki/Stereographic_projection" target="_blank">stereographic projection</a> of the celestial hemisphere with all the visible stars. Through experimentation we found that this particular projection creates the most visually pleasing and easy to follow map.</p>
+             <p><img src="Images/how-it-works/img1.jpg" style="max-width: 100%; width: 1000px; "></p>
+             <h2>What’s on the map</h2>
+             <p>The star map shows the projection of the visible sky with the cardinal directions (North, South, East, West) indicated. The stars that are close to the edge of the circle were closer to the horizon in your chosen moment, while stars close to the center of the circle were visible right above your head. The size of each dot indicates the <a href="https://en.wikipedia.org/wiki/Apparent_magnitude" target="_blank">apparent magnitude</a> of the star. The celestial hemisphere projected to a plane above it.</p>
+             <p>We also draw the visible constellations from the <a href="https://en.wikipedia.org/wiki/88_modern_constellations" target="_blank">88 official ones</a> ones on the map. Perhaps you will recognize some of them, such as <a href="https://en.wikipedia.org/wiki/Cassiopeia_(constellation)" target="_blank">Cassiopeia</a>, <a href="https://en.wikipedia.org/wiki/Orion_(constellation)" target="_blank">Orion</a> or <a href="https://en.wikipedia.org/wiki/Leo_(constellation)" target="_blank">Leo</a>. To complete the map in its beauty, we add the visible boundaries of our home galaxy, the Milky Way, also adjusted to the location and time so that your map is truly special.</p>
+             <p><img src="Images/how-it-works/split-hemisphere.jpg" style="max-width: 100%; width: 1000px;"></p>
+             <h2>Manufacturing quality</h2>
+             <p>We think that our maps look the best when they are printed on high quality paper. We use 200 GSM smooth fine art paper and print at 300 DPI resolution. GSM (grams per square meter) refers to the thickness of the paper. Most household printer papers are 90-100 GSM, while typical poster prints are 120-140 GSM.</p>
+             <p><img src="Images/how-it-works/map-details.jpg" style="max-width: 100%; width: 1000PX;"></p>
+             <h2>Still having doubts?</h2>
+             <p>Check our list of <a>Frequently Asked Questions</a> or search our entire <a>Knowledge Base</a>.</p>
+            </section>
+     
+            
+         
+                          
+   <!-- footer section start -->
+   <footer class="line-footer">
+    <div class="footer-container" >
+        <div class="footer-sec">
+            <h2>ABOUT US</h2>
+                <ul >
+                    <li><a>Five Star Give Ideas AI Tool</a></li>
+                    <li>#SaveOurStars</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Press room</li>
+                    <li>Blog</li>
+                    <li>Under Lucky Stars en Español</li>
+                    <li>Under Lucky Stars auf</li>
+                    <li>Deutsch</li>
+                    <li>Under Lucky Stars en</li>
+                    <li>Français</li>
+                    <li>Under Lucky Stars in Italiano</li>
+                    <li>Under Lucky Stars em</li>
+                    <li>Português</li>
+                    <li>Under Lucky Stars 日本語</li>
+                    <li>Under Lucky Stars magyarul</li>
+                    
+                </ul>
+
+        </div>
+
+        <div class="footer-sec">
+            <h2>LEGAL</h2>
+                <ul >
+                    <li>Terms of Service</li>
+                    <li>Privacy Policy</li>
+                    <li>Return Policy</li>
+                </ul>
+        </div>
+
+        
+        <div class="footer-sec">
+            <h2>HELP</h2>
+                <ul >
+                    <li>FAQ</li>
+                    <li>Support Center</li>
+                    <li>Email Us</li>
+                </ul>
+        </div>
+
+        <div class="footer-sec">
+            <h2>OUR PRODUCTS</h2>
+                <ul >
+                    <li>How it works</li>
+                    <li>Astronomically Verified</li>
+                    <li>Review</li>
+                </ul>
+        </div>
+
+        <div class="footer-sec">
+            <h2>OCCASIONS</h2>
+                <ul >
+                    <li>Star Maps For Moms</li>
+                    <li>Star Maps For Couples</li>
+                    <li>Star Maps For Birthdays</li>
+                    <li>Star Maps For Babies</li>
+                    <li>Star Maps For Weddings</li>
+                    <li>Star Maps For Engagement</li>
+                    <li>Star Maps For Anniversaries</li>
+                </ul>
+        </div>
+    </div>
+    <div class="badges">
+        <div class="cards">
+            <img  src="Images/footer-logo/visa.png"  width="64px" height="40px">
+            <img src="Images/footer-logo/mastercard.png" width="64px" height="40px">
+            <img src="Images/footer-logo/maestro.png" width="64px" height="40px">
+            <img src="Images/footer-logo/discover.png" width="64px" height="40px">
+            <img src="Images/footer-logo/paypal.png" width="64px" height="40px">
+        </div>
+        <div class="carbon">
+            <img src="Images/footer-logo/leaf.png" width="30px" height="30px">
+            <a>Carbon Neutral</a>
+        </div>
+    </div>
+</footer>
+<!-- footer section finish -->
+<script src="starss.js"></script>    
+</body>
+</html>
