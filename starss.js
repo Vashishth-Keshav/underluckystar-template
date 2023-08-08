@@ -24,21 +24,19 @@ function toggleMenu() {
 
     }
   }
+  function toggleNavbar() {
+    const navLinks = document.getElementById("navLinks");
+    if (navLinks.style.display === "block") {
+      navLinks.style.display = "none";
+    } else {
+      navLinks.style.display = "block";
+    }
+  }
 
-  
 // const clickedEle = document.querySelector('.map-see-all a');
 // clickedEle.addEventListener('click', function(e) {
 //   document.querySelector('.map').setAttribute('style', 'height:auto; overflow-y:auto');
 //   e.target.innerText = 'Show';
 // });
 
-
-  function toggleNextSibling(element) {
-    const nextSibling = element.nextElementSibling;
-    if (nextSibling.style.display === 'none') {
-      nextSibling.style.display = 'block'; // You can use 'inline', 'inline-block', etc. based on your layout needs
-    } else {
-      nextSibling.style.display = 'none';
-    }
-  }
 
