@@ -4,6 +4,22 @@
     margin: 0px;
     box-sizing:border-box;
 }
+
+img {
+    max-width: 100%;
+}
+
+.faq-ans{
+    opacity: 0;
+    height: 0;
+    transition: height 1s linear;
+}
+
+.faq-ans.show{
+    opacity: 1;
+    height: auto;
+}
+
  .poster-main::-webkit-scrollbar, .reviews-main::-webkit-scrollbar, .tagged-pics-main-container::-webkit-scrollbar {
     display: none; 
 } 
@@ -65,6 +81,12 @@
     position: fixed;
     z-index: 1;
 }
+
+.mob-header.background{
+    background-color: #FFFFFF;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
 .mob-header .menu-logo img{
     width: 48px;
 }
@@ -293,7 +315,8 @@ section p{
 }                      
 .science-div{
     text-align: center;
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -455,6 +478,7 @@ section p{
 }  
 .tagged-pic{
     margin-right: 15px;
+    width: 335px;
 }       
 .tagged-pic img{
     width: 320px;
@@ -873,6 +897,8 @@ margin: auto;
     background-size: 35px 35px;
     padding-left: 50px;
     margin-bottom: 15px;
+    min-height: 40px;
+    cursor: pointer;
 }
 .faq-ques{
     opacity: 0.7;
@@ -891,9 +917,7 @@ margin: auto;
 }
 
 /* footer section start */
-footer{
-    padding-bottom: 200px;
-}
+
 .footer-container{
     display: flex;
     justify-content: space-between;
@@ -946,6 +970,14 @@ footer{
     border-top: 1px solid #aaa;
     background: #FBF7F6;
     transform: translateY(80px);
+    position: fixed;
+    bottom: -80px;
+    width: 60%;
+    transition: bottom 0.5s ease-in-out;
+ }
+
+ #floater.show{
+     bottom: 80px;
  }
 .float-button:hover {
     background: #1688ff;
@@ -959,12 +991,14 @@ footer{
     font-weight: 600;
     cursor: pointer;
     border-radius: 10px;
-    line-height: 50px;
+    /* line-height: 50px; */
     box-shadow: 0 5px 0 #00478F;
-    font-size: 25px;
+    font-size: 15px;
+    padding: 10px 20px;
+    
 }
 .last-text{
-    font-size: 18px;
+    font-size: 10px;
     margin-top: 15px;
     text-align: center;
 }
@@ -1271,6 +1305,10 @@ article p{
     }
     .nav-wrapper a{
         padding: 0;
+    }
+
+    .slider-1 > div {
+        width: 200px;
     }
 }
 .header-line{
@@ -1653,10 +1691,12 @@ input[type="submit"]:hover{
 }
 .tagged-pic{
     margin-right: 5vw;
+    
 }
 .tagged-pic img{
-    width: 75vw;
-    height: 75vw;
+    width: 100%;
+    height: auto;
+    /* height: 75vw; */
 }
 .tagged-pic-user{
 font-size: 1.8vh;
