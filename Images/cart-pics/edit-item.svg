@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>edit-item</title>
+    <g id="edit-item" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(96.500000, 104.000000) rotate(45.000000) translate(-96.500000, -104.000000) translate(73.000000, -17.000000)" fill="#000000">
+            <rect id="Rectangle" x="2.81166278e-13" y="36.3353073" width="47" height="146.638919"></rect>
+            <rect id="Rectangle" transform="translate(23.500000, 12.328051) scale(1, -1) translate(-23.500000, -12.328051) " x="2.56969392e-13" y="-2.47508671e-15" width="47" height="24.6561014"></rect>
+            <polygon id="Triangle" transform="translate(23.500000, 218.641588) scale(1, -1) translate(-23.500000, -218.641588) " points="23.5 195.283176 47 242 -4.74628643e-14 242"></polygon>
+        </g>
+    </g>
+</svg>

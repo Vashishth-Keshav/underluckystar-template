@@ -19,14 +19,16 @@ function toggleMenu() {
       menu.style.display = "none";
       document.querySelector('.hamburger-icon').style.display='block'
       document.querySelector('.hamburger-icon-close').style.display='none';
-      if(window.scrollY < 250){
+      if(window.scrollY < 50){
         document.querySelector('.mob-header').classList.remove('background');
+      
       }
     } else {
       menu.style.display = "block";
       document.querySelector('.hamburger-icon').style.display='none'
       document.querySelector('.hamburger-icon-close').style.display='block'
       document.querySelector('.mob-header').classList.add('background');
+
     }
   }
   function toggleNavbar() {
@@ -37,14 +39,16 @@ function toggleMenu() {
       navLinks.style.display = "block";
     }
   }
-
+  // function toggleMenu() {
+  //   document.style.backgroundColor = "red";
+  // }
   Array.from(document.getElementsByClassName('faq-open')).forEach(function(ques){
     ques.onclick = function(){
       this.querySelector('.faq-ans').classList.toggle('show')
     }
   })
 
-  if(window.scrollY < 250){
+  if(window.scrollY < 50){
     document.querySelector('.mob-header').classList.remove('background');
   }else{
     document.querySelector('.mob-header').classList.add('background');
@@ -53,28 +57,72 @@ function toggleMenu() {
   window.addEventListener("scroll", function(event) {
     var top = this.scrollY,
         left =this.scrollX;
-   if(top < 250){
+   if(top < 50){
       document.querySelector('.mob-header').classList.remove('background');
-      if(document.querySelector('#floater')){
-        document.querySelector('#floater').classList.remove('show')
-      }
+
+    
     }else{
       document.querySelector('.mob-header').classList.add('background');
-      if(document.querySelector('#floater')){
-        document.querySelector('#floater').classList.add('show')
-      }
-    }
+     }
 }, false);
 
+window.addEventListener("scroll", function(event) {
+  var top = this.scrollY,
+      left =this.scrollX;
+ if(top < 800){
+   document.querySelector('#floater').classList.remove('show');
+    
+  }else{
+    document.querySelector('#floater').classList.add('show')
+  }
+}, false); 
+
+window.addEventListener("scroll",function(event){
+  console.log(this.scrollY)
+  if(this.scrollY > 0){
+    document.querySelector('.logo-pic-2').classList.remove('display_none')
+    document.querySelector('.logo-pic-1').classList.add('display_none')
+  }else{
+    document.querySelector('.logo-pic-1').classList.remove('display_none')
+    document.querySelector('.logo-pic-2').classList.add('display_none')
+
+  }
+})
+
+// window.addEventListener("scroll", function(event) {
+//   var top = this.scrollY,
+//       left =this.scrollX;
+//  if(top < 250){
+//     document.querySelector('.mob-header').classList.remove('background');
+//     if(document.querySelector('#floater')){
+//       document.querySelector('#floater').classList.remove('show')
+//     }
+//   }else{
+//     document.querySelector('.mob-header').classList.add('background');
+//     if(document.querySelector('#floater')){
+//       document.querySelector('#floater').classList.add('show')
+//     }
+//   }
+// }, false);
 
 function toggleNextSibling(obj){
   
 }
 
+// for cart page 
+const Checkboxopen = document.getElementById("checkbox-click");
+const billingAddressfieldsopen = document.getElementById("billing-address-fields");
+
+Checkboxopen.addEventListener("change", function() {
+  if (this.checked) {
+      billingAddressfieldsopen.style.display = "block";
+  } else {
+    billingAddressfieldsopen.style.display = "none";
+  }
+});
 // const clickedEle = document.querySelector('.map-see-all a');
 // clickedEle.addEventListener('click', function(e) {
 //   document.querySelector('.map').setAttribute('style', 'height:auto; overflow-y:auto');
 //   e.target.innerText = 'Show';
 // });
-
 
