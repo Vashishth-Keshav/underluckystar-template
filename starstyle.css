@@ -2171,7 +2171,7 @@ font-size: 1.8vh;
         line-height: 1.4rem;
         margin-block: 8px;
     }
-    #content_right button{
+    #content_right .btn{
         font-size: 12px;
     }
     .carousel2 {
@@ -2179,6 +2179,7 @@ font-size: 1.8vh;
         overflow: hidden;
          height: 400px;
      }
+  
 }
 @media (width:767px){
     .carousel2{
