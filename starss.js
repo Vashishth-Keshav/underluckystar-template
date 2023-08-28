@@ -19,7 +19,7 @@ function toggleMenu() {
       menu.style.display = "none";
       document.querySelector('.hamburger-icon').style.display='block'
       document.querySelector('.hamburger-icon-close').style.display='none';
-      if(window.scrollY < 50){
+      if(window.scrollY < 10){
         document.querySelector('.mob-header').classList.remove('background');
       
       }
@@ -48,7 +48,7 @@ function toggleMenu() {
     }
   })
 
-  if(window.scrollY < 50){
+  if(window.scrollY < 10){
     document.querySelector('.mob-header').classList.remove('background');
   }else{
     document.querySelector('.mob-header').classList.add('background');
@@ -57,7 +57,7 @@ function toggleMenu() {
   window.addEventListener("scroll", function(event) {
     var top = this.scrollY,
         left =this.scrollX;
-   if(top < 50){
+   if(top < 10){
       document.querySelector('.mob-header').classList.remove('background');
 
     
@@ -77,17 +77,17 @@ window.addEventListener("scroll", function(event) {
   }
 }, false); 
 
-window.addEventListener("scroll",function(event){
-  console.log(this.scrollY)
-  if(this.scrollY > 0){
-    document.querySelector('.logo-pic-2').classList.remove('display_none')
-    document.querySelector('.logo-pic-1').classList.add('display_none')
-  }else{
-    document.querySelector('.logo-pic-1').classList.remove('display_none')
-    document.querySelector('.logo-pic-2').classList.add('display_none')
+// window.addEventListener("scroll",function(event){
+//   console.log(this.scrollY)
+//   if(this.scrollY > 0){
+//     document.querySelector('.logo-pic-2').classList.remove('display_none')
+//     document.querySelector('.logo-pic-1').classList.add('display_none')
+//   }else{
+//     document.querySelector('.logo-pic-1').classList.remove('display_none')
+//     document.querySelector('.logo-pic-2').classList.add('display_none')
 
-  }
-})
+//   }
+// })
 
 // window.addEventListener("scroll", function(event) {
 //   var top = this.scrollY,
@@ -105,9 +105,21 @@ window.addEventListener("scroll",function(event){
 //   }
 // }, false);
 
-function toggleNextSibling(obj){
-  
+
+function toggleNextSibling(obj) {
+ 
+  var sibling = obj.nextElementSibling;
+
+  if (sibling) {
+
+      if (sibling.style.display === 'none' || sibling.style.display === '') {
+          sibling.style.display = 'block';
+      } else {
+          sibling.style.display = 'none';
+      }
+  }
 }
+
 
 // for cart page 
 const Checkboxopen = document.getElementById("checkbox-click");
