@@ -77,17 +77,18 @@ window.addEventListener("scroll", function(event) {
   }
 }, false); 
 
-// window.addEventListener("scroll",function(event){
-//   console.log(this.scrollY)
-//   if(this.scrollY > 0){
-//     document.querySelector('.logo-pic-2').classList.remove('display_none')
-//     document.querySelector('.logo-pic-1').classList.add('display_none')
-//   }else{
-//     document.querySelector('.logo-pic-1').classList.remove('display_none')
-//     document.querySelector('.logo-pic-2').classList.add('display_none')
+window.addEventListener("scroll",function(event){
+  console.log(this.scrollY)
+ 
+  if(this.scrollY > 0){
+    document.querySelector('.logo-pic-2').classList.remove('display_none')
+    document.querySelector('.logo-pic-1').classList.add('display_none')
+  }else{
+    document.querySelector('.logo-pic-1').classList.remove('display_none')
+    document.querySelector('.logo-pic-2').classList.add('display_none')
 
-//   }
-// })
+  }
+})
 
 // window.addEventListener("scroll", function(event) {
 //   var top = this.scrollY,
