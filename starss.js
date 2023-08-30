@@ -78,7 +78,7 @@ window.addEventListener("scroll", function(event) {
 }, false); 
 
 window.addEventListener("scroll",function(event){
-  console.log(this.scrollY)
+  // console.log(this.scrollY)
  
   if(this.scrollY > 0){
     document.querySelector('.logo-pic-2').classList.remove('display_none')
