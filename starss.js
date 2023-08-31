@@ -13,6 +13,7 @@ if(document.querySelectorAll('.map-see-all a').length){
       }
   }) 
 }
+
 function toggleMenu() {
     var menu = document.getElementById("popup-Menu");
     if (menu.style.display === "block") {
@@ -27,10 +28,12 @@ function toggleMenu() {
       menu.style.display = "block";
       document.querySelector('.hamburger-icon').style.display='none'
       document.querySelector('.hamburger-icon-close').style.display='block'
+      if(window.scrollY >1){
       document.querySelector('.mob-header').classList.add('background');
-
-    }
+      }
   }
+}
+
   function toggleNavbar() {
     const navLinks = document.getElementById("navLinks");
     if (navLinks.style.display === "block") {
