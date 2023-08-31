@@ -19,7 +19,7 @@ function toggleMenu() {
       menu.style.display = "none";
       document.querySelector('.hamburger-icon').style.display='block'
       document.querySelector('.hamburger-icon-close').style.display='none';
-      if(window.scrollY < 0){
+      if(window.scrollY < 1){
         document.querySelector('.mob-header').classList.remove('background');
       
       }
@@ -48,7 +48,7 @@ function toggleMenu() {
     }
   })
 
-  if(window.scrollY < 0){
+  if(window.scrollY < 1){
     document.querySelector('.mob-header').classList.remove('background');
   }else{
     document.querySelector('.mob-header').classList.add('background');
@@ -57,7 +57,7 @@ function toggleMenu() {
   window.addEventListener("scroll", function(event) {
     var top = this.scrollY,
         left =this.scrollX;
-   if(top < 0){
+   if(top < 1){
       document.querySelector('.mob-header').classList.remove('background');
 
     
