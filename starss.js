@@ -83,9 +83,22 @@ window.addEventListener("scroll",function(event){
   if(this.scrollY > 0){
     document.querySelector('.logo-pic-2').classList.remove('display_none')
     document.querySelector('.logo-pic-1').classList.add('display_none')
+
+    document.querySelector('.hamburger-icon-2').classList.remove('display_none')
+    document.querySelector('.hamburger-icon-1').classList.add('display_none')
+
+    document.querySelector('.close-icon-2').classList.remove('display_none')
+    document.querySelector('.close-icon-1').classList.add('display_none')
+
   }else{
     document.querySelector('.logo-pic-1').classList.remove('display_none')
     document.querySelector('.logo-pic-2').classList.add('display_none')
+
+    document.querySelector('.hamburger-icon-1').classList.remove('display_none')
+    document.querySelector('.hamburger-icon-2').classList.add('display_none')
+
+    document.querySelector('.close-icon-1').classList.remove('display_none')
+    document.querySelector('.close-icon-2').classList.add('display_none')
 
   }
 })
